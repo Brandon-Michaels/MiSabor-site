@@ -14,10 +14,8 @@ function builder(name, desc, price) {
 </li>`;
 }
 
-// console.log(builder("egg", "it egg", "99"));
-
 // Example data for Appetizers section, replace array data
-let names = ["Mi Sabor Pepper Popper", "Platains", "Chip Sampler", "Nachos Fiesta", "Chips & Salsa", "Guacamole & Chips"];
+let names = ["Mi Sabor Pepper Popper", "Plantains", "Chip Sampler", "Nachos Fiesta", "Chips & Salsa", "Guacamole & Chips"];
 let descs = ["2 Shrimp w/ Guacamole Stuffed Inside a Pepper", "Sweet Plantains w/ Refried Beans and Sour Cream", "Chips served w/ Red Sauce, Green Sauce & Guacamole", "Tortilla Chips Smothered w/ Melted Cheese, Black Beans, Lettuce, Tomato & Topped w/ Guacamole & Sour Cream & a Choice of Meat", "", ""];
 let prices = [10, 7, 8, 17, 4, 6]; // Enter whole dollar amount ($x, not $x.xx)
 
