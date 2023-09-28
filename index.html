@@ -104,19 +104,21 @@
           <div class="col">
             <ul class="nav justify-content-center pb_tab_v1">
               <li class="nav-item">
+                <a class="nav-link p-3" data-toggle="list" href="#salads" role="tab">Breakfast</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link active p-3" data-toggle="list" href="#food" role="tab">Lunch</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link p-3" data-toggle="list" href="#drinks" role="tab">Dinner</a>
               </li>
-	            <!-- FLAG May end up deleting 3rd option "Salads" section and just keep menu as lunch and dinner -->
-              <li class="nav-item">
-                <a class="nav-link p-3" data-toggle="list" href="#salads" role="tab">Salads</a>
-              </li>
             </ul>
-            <!-- Appetizers, always shown-->
-            <h2 class="font-weight-bold" style="margin-bottom: 30px;">Appetizers</h2>
-            <div class="row">
+            
+            <!-- Appetizers -->
+            <div id="appetizers">
+              <!-- Appetizers should be shown first only if Breakfest is not selected, otherwise Appetizers should be hidden -->
+              <h2 class="font-weight-bold" style="margin-bottom: 30px;">Appetizers</h2>
+              <div class="row">
               <div class="col-md">
                 <ul class="list-unstyled pb_food-menu">
                   <li>
@@ -180,9 +182,97 @@
                   </li>
                 </ul>
               </div>
+              </div>
             </div>
             <!-- Tab panes, only 1 tab shown at a time -->
             <div class="tab-content">
+              <!-- Breakfast Tab -->
+              <div class="tab-pane fade" id="salads" role="tabpanel">
+                <h2 class="font-weight-bold" style="margin-bottom: 30px;">Breakfast</h2>
+                <div class="row">
+                  <div class="col-md">
+                    <ul class="list-unstyled pb_food-menu">
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Huevos Rancheros</h3>
+                                      <p class="mb-0">2 Shell Tortillas with 2 Eggs styled to your liking & Salsa</p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>12.00</span></div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Huevos a la Mexicana</h3>
+                                      <p class="mb-0">Eggs styled, Tomato, Jalapeño, Avocado slices, Bread roll on the side, served with Rice & Beans</p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>12.00</span></div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Eggs with Chorizo</h3>
+                                      <p class="mb-0"></p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>12.00</span></div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Eggs with Ham & Plantains</h3>
+                                      <p class="mb-0"></p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>12.00</span></div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Eggs with Veggies</h3>
+                                      <p class="mb-0">Peppers, Onions, Tomatoes, Spinach & American Cheese</p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>12.00</span></div>
+                          </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md">
+                    <ul class="list-unstyled pb_food-menu">
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Chilaquiles</h3>
+                                      <p class="mb-0">Fried Crunchy Tortilla topped with Green or Red Sauce</p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>15.00</span></div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Breakfast Burritos</h3>
+                                      <p class="mb-0">Stuffed with Eggs, choice of Ham or Chorizo / Veggies</p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>14.00</span></div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-lg-10">
+                                      <h3 class="pb_font-18 font-weight-bold">Torta Sandwiches</h3>
+                                      <p class="mb-0">a Mexican inspired Sandwich featuring a Choice of Meat*, Eggs, Beans, Lettuce, Tomato, Onions, Mayo, Avocado, Peppers & Cheese</p>
+                              </div>
+                              <div class="col-lg-2"><span class="price"><sup>$</sup>15.00</span></div>
+                          </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="pb_font-18" style="margin-top: 15px; margin-bottom: 30px;">Choices of meat: Chicken, Ham, Hotdog, Breaded Beef or Mexican Sausage</h3>
+              </div>
 	            <!-- Lunch Tab -->
               <div class="tab-pane fade show active" id="food" role="tabpanel">
                 <!-- New Lunch Header-->
@@ -336,91 +426,6 @@
                             <p class="mb-0">Far far away, behind the word mountains..</p>
                           </div>
                           <div class="col-lg-2"><span class="price"><sup>$</sup>12.50</span></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-	            <!-- FLAG Unused tab, may delete -->
-              <div class="tab-pane fade" id="salads" role="tabpanel">
-                <div class="row">
-                  <div class="col-md">
-                    <ul class="list-unstyled pb_food-menu">
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Caesars Salad</h3>
-                            <p class="mb-0">Romaine lettuce, croutons, and grated cheese</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>13.95</span></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Garden Salad</h3>
-                            <p class="mb-0">Mixed greens, tomato, cucumber &amp; black olives</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>15.50</span></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Baby Greens</h3>
-                            <p class="mb-0">Mixed greens, fresh mozzarella, tomato &ampl toasted peppers</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>17.35</span></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Cold Antipasto</h3>
-                            <p class="mb-0">Romaine lettuce, croutons, and grated cheese</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>11.50</span></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md">
-                    <ul class="list-unstyled pb_food-menu">
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Caesars Salad</h3>
-                            <p class="mb-0">Romaine lettuce, croutons, and grated cheese</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>22.95</span></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Garden Salad</h3>
-                            <p class="mb-0">Mixed greens, tomato, cucumber &amp; black olives</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>11.50</span></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Baby Greens</h3>
-                            <p class="mb-0">Mixed greens, fresh mozzarella, tomato &ampl toasted peppers</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>14.35</span></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-lg-10">
-                            <h3 class="pb_font-18 font-weight-bold">Cold Antipasto</h3>
-                            <p class="mb-0">Romaine lettuce, croutons, and grated cheese</p>
-                          </div>
-                          <div class="col-lg-2"><span class="price"><sup>$</sup>15.50</span></div>
                         </div>
                       </li>
                     </ul>
@@ -703,10 +708,12 @@
         <div class="row text-center">
           <div class="col">
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-tripadvisor"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-google"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa">
+                <img src="assets/images/doordash-svgrepo-com.svg" alt="doordash" width="20px">
+              </i></a></li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/misaborflemington" class="p-2"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/misabor_flemington/" class="p-2"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
